@@ -73,7 +73,23 @@ input[type=submit]:hover {
 </center>
 <script type="text/javascript">
   function submitted() {
-  alert("Thanks.....!! Your form is submitted successfully");
+   fname = document.getElementByName('firstname').value;
+   lname = document.getElementByName('lastname').value;
+   subject = document.getElementByName('subject').value;
+   if(fname != '')
+   {
+      if(lname !='')
+      {
+          if(subject!='')
+           alert("Thanks.....!! Your form is submitted successfully");
+          else
+           alert("Subject field is Empty....");
+      }
+      else
+         alert("Last Name field is Empty....");
+   }
+   else
+    alert("First Name field is Empty....");
 }
 </script>
 </body>
