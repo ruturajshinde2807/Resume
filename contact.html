@@ -76,11 +76,11 @@ input[type=submit]:hover {
    const fname = document.getElementById('fname').value;
    const lname = document.getElementById('lname').value;
    const subject = document.getElementById('subject').value;
-   if(fname != '')
+   if(fname !== '')
    {
-      if(lname !='')
+      if(lname !=='')
       {
-          if(subject!='')
+          if(subject!=='')
            console.log("Thanks.....!! Your form is submitted successfully");
           else
            console.log("Subject field is Empty....");
